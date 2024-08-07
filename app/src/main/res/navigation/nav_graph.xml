@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.montraexpensetracker.fragments.SplashFragment"
+        android:label="SplashFragment" >
+ />
+        <action
+            android:id="@+id/action_splashFragment_to_dashboard1Fragment"
+            app:destination="@id/dashboard1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboard1Fragment"
+        android:name="com.example.montraexpensetracker.fragments.dashboard.Dashboard1Fragment"
+        android:label="fragment_dashboard1"
+        tools:layout="@layout/fragment_dashboard1" />
+    <fragment
+        android:id="@+id/dashboard2Fragment"
+        android:name="com.example.montraexpensetracker.fragments.dashboard.Dashboard2Fragment"
+        android:label="fragment_dashboard2"
+        tools:layout="@layout/fragment_dashboard2" />
+
+</navigation>

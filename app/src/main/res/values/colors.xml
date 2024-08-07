@@ -5,9 +5,14 @@
 
 
     <color name="Violet_100">#7F3DFF</color>
-    <color name="Light_100">#FFFFFF</color>
+    <color name="Violet_20">#F4EEFD</color>
 
-<!--    <color name="white">#FFFFFFFF</color>-->
+    <color name="Light_100">#FFFFFF</color>
+    <color name="Dark50">#212325</color>
+    <color name="Light_20">#91919F</color>
+    <color name="Light_80">#FCFCFC</color>
+
+    <!--    <color name="white">#FFFFFFFF</color>-->
 <!--    <color name="white">#FFFFFFFF</color>-->
 <!--    <color name="white">#FFFFFFFF</color>-->
 

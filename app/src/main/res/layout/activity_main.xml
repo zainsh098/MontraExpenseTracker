@@ -5,23 +5,16 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    android:background="@color/Violet_100"
     tools:context=".MainActivity">
 
 
-    <TextView
-        android:textSize="56dp"
-        android:text="montra"
-        android:textStyle="bold"
-        android:textColor="@color/Light_100"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-
-
-
-
-
-
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView3"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph"
+ />
 </androidx.constraintlayout.widget.ConstraintLayout>
