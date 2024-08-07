@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="Violet_100">#7F3DFF</color>
+    <color name="Light_100">#FFFFFF</color>
+
+<!--    <color name="white">#FFFFFFFF</color>-->
+<!--    <color name="white">#FFFFFFFF</color>-->
+<!--    <color name="white">#FFFFFFFF</color>-->
+
+
+</resources>
