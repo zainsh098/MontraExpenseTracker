@@ -35,7 +35,7 @@ android {
     }
 
     buildFeatures {
-        viewBinding=true
+        viewBinding = true
 
     }
 
@@ -43,13 +43,13 @@ android {
 
 dependencies {
     val nav_version = "2.7.7"
-        // sdp and ssp for text size
-    implementation (libs.sdp.android)
-    implementation (libs.ssp.android)
+    // sdp and ssp for text size
+    implementation(libs.sdp.android)
+    implementation(libs.ssp.android)
 
-    implementation ("me.relex:circleindicator:2.1.6")
-    implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
-    implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
+    implementation(libs.circleindicator)
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
