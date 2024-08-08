@@ -47,7 +47,7 @@ dependencies {
     implementation (libs.sdp.android)
     implementation (libs.ssp.android)
 
-
+    implementation ("me.relex:circleindicator:2.1.6")
     implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
     implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
 

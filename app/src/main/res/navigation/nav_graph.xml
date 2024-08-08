@@ -7,11 +7,10 @@
     <fragment
         android:id="@+id/splashFragment"
         android:name="com.example.montraexpensetracker.fragments.SplashFragment"
-        android:label="SplashFragment" >
- />
+        android:label="SplashFragment">
         <action
-            android:id="@+id/action_splashFragment_to_dashboard1Fragment"
-            app:destination="@id/dashboard1Fragment" />
+            android:id="@+id/action_splashFragment_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment" />
     </fragment>
     <fragment
         android:id="@+id/dashboard1Fragment"
@@ -23,5 +22,33 @@
         android:name="com.example.montraexpensetracker.fragments.dashboard.Dashboard2Fragment"
         android:label="fragment_dashboard2"
         tools:layout="@layout/fragment_dashboard2" />
+    <fragment
+        android:id="@+id/dashboard3Fragment"
+        android:name="com.example.montraexpensetracker.fragments.dashboard.Dashboard3Fragment"
+        android:label="fragment_dashboard3"
+        tools:layout="@layout/fragment_dashboard3" />
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.example.montraexpensetracker.fragments.viewpager.ViewPagerFragment"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager">
+        <action
+            android:id="@+id/action_viewPagerFragment_to_dashboard1Fragment"
+            app:destination="@id/dashboard1Fragment" />
+        <action
+            android:id="@+id/action_viewPagerFragment_to_dashboard2Fragment"
+            app:destination="@id/dashboard2Fragment" />
+        <action
+            android:id="@+id/action_viewPagerFragment_to_dashboard3Fragment"
+            app:destination="@id/dashboard3Fragment" />
+        <action
+            android:id="@+id/action_viewPagerFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.montraexpensetracker.fragments.signup.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" />
 
 </navigation>

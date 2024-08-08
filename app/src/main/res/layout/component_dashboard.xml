@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
-
+    android:background="@color/Light_100">
 
     <ImageView
         android:id="@+id/dashImageView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_74sdp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_70sdp"
         android:src="@drawable/ilustration"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,24 +22,27 @@
         style="@style/splash_text_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_30sdp"
-        tools:text="@string/onboarding_screen_heading_1"
+        android:layout_marginTop="@dimen/_25sdp"
         android:textColor="@color/Dark50"
         android:textSize="@dimen/_25ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dashImageView" />
+        app:layout_constraintTop_toBottomOf="@+id/dashImageView"
+        tools:text="@string/onboarding_screen_heading_1" />
 
     <TextView
         android:id="@+id/dashboardSubtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
         android:fontFamily="@font/inter_medium"
+        android:gravity="center"
         android:textColor="@color/Light_20"
         android:textSize="@dimen/_12ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dashTitleTextView"
         tools:text="@string/onboarding_screen_subtitle_1" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,7 +2,8 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.MontraExpenseTracker" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+         <item name="colorPrimary">@color/Light_100</item>
+
     </style>
 
     <style name="Theme.MontraExpenseTracker" parent="Base.Theme.MontraExpenseTracker" />

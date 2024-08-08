@@ -25,7 +25,7 @@ class SplashFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         lifecycleScope.launch {
             delay(1000)
-            findNavController().navigate(R.id.action_splashFragment_to_dashboard1Fragment)
+            findNavController().navigate(R.id.action_splashFragment_to_viewPagerFragment)
         }
     }
 }

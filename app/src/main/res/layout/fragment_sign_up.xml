@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.signup.SignUpFragment">
+
+    <include
+
+        android:id="@+id/component_toolbar"
+        layout="@layout/component_toolbar" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/textFieldName"
+        style="@style/text_edit"
+        android:layout_marginTop="@dimen/_125sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:hint="@string/textfield_name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/textFieldEmail"
+        style="@style/text_edit"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:hint="@string/hint_text_email"
+        android:textColorHint="@color/Light_20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textFieldName" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:hint="@string/hint_text_password"
+        android:textColorHint="@color/Light_20"
+        app:layout_constraintTop_toBottomOf="@id/textFieldEmail"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textFieldPassword"
+            style="@style/text_edit"
+            android:layout_marginEnd="@dimen/_16sdp"
+            app:hintTextColor="@color/Light_20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textFieldEmail" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:buttonTint="@color/Violet_100"
+        android:fontFamily="@font/inter_medium"
+        android:includeFontPadding="false"
+        android:paddingStart="@dimen/_5sdp"
+        android:text="@string/checkbox_text"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_signUp"
+        style="@style/button_style"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:fontFamily="@font/inter_medium"
+        android:includeFontPadding="false"
+        android:text="@string/btn_txt_sign_up"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <TextView
+        style="@style/splash_text_style"
+
+
+        android:layout_marginTop="17dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/or_with"
+        android:textColor="@color/Light_20"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_signUp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/button_Login"
+        style="@style/button_style_login"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_75sdp"
+        android:drawableStart="@drawable/google_icon"
+        android:fontFamily="@font/inter_semibold"
+        android:paddingStart="@dimen/_35sdp"
+        android:paddingEnd="@dimen/_25sdp"
+        android:text="@string/button_google_text"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        style="@style/splash_text_style"
+
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_44sdp"
+        android:fontFamily="@font/inter_medium"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:text="@string/already_have_an_account"
+        android:textColor="@color/Light_20"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        style="@style/splash_text_style"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_44sdp"
+        android:fontFamily="@font/inter_medium"
+        android:text="@string/login_text"
+        android:textColor="@color/Violet_100"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
