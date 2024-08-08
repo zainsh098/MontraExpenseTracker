@@ -10,6 +10,7 @@
     <color name="Light_100">#FFFFFF</color>
     <color name="Dark50">#212325</color>
     <color name="Dark25">#292B2D</color>
+    <color name="dotTextfieldColor">#E0E2E9</color>
 
     <color name="Light_20">#91919F</color>
     <color name="Light_80">#FCFCFC</color>

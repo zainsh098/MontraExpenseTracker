@@ -52,7 +52,11 @@
         android:id="@+id/signUpFragment"
         android:name="com.example.montraexpensetracker.fragments.signup.SignUpFragment"
         android:label="fragment_sign_up"
-        tools:layout="@layout/fragment_sign_up" />
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_signupVerificationFragment"
+            app:destination="@id/signupVerificationFragment" />
+    </fragment>
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.montraexpensetracker.fragments.login.LoginFragment"
@@ -80,5 +84,10 @@
             android:id="@+id/action_forgotPasswordSentFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/signupVerificationFragment"
+        android:name="com.example.montraexpensetracker.fragments.signup.SignupVerificationFragment"
+        android:label="fragment_signup_verification"
+        tools:layout="@layout/fragment_signup_verification" />
 
 </navigation>

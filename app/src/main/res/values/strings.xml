@@ -30,4 +30,8 @@
     <string name="your_email_is_on_the_way">Your email is on the way</string>
     <string name="check_your_email_test_test_com_and_follow_the_instructions_to_reset_your_password">Check your email test@test.com and follow the instructions to reset your password</string>
     <string name="back_to_login">Back to Login</string>
+    <string name="enter_your_verification_code">Enter your\nVerification Code</string>
+    <string name="we_send_verification_code_to_your_email_brajaoma_gmail_com_you_can_check_your_inbox">We send verification code to your email brajaoma*****@gmail.com. You can check your inbox.</string>
+    <string name="verify">Verify</string>
+    <string name="_04_59">04:59</string>
 </resources>

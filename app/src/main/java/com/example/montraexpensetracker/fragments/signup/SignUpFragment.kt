@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.montraexpensetracker.R
 import com.example.montraexpensetracker.databinding.FragmentSignUpBinding
 
@@ -26,7 +27,11 @@ class SignUpFragment : Fragment() {
         binding.apply {
 
             componentToolbar.textToolbar.text=getString(R.string.text_toolbar_signup)
+            buttonSignUp.setOnClickListener {
 
+                findNavController().navigate(R.id.action_signUpFragment_to_signupVerificationFragment)
+
+            }
         }
     }
 

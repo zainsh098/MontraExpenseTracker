@@ -1,14 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.signup.SignupVerificationFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/textView"
+        style="@style/splash_text_style"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_120sdp"
+        android:layout_marginEnd="@dimen/_13sdp"
+        android:fontFamily="@font/inter_semibold"
+        android:gravity="start"
+        android:text="@string/enter_your_verification_code"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_26ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <LinearLayout
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.285">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_weight="1"
+            android:gravity="end">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/textFieldEmail1"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:background="@drawable/custom_edit_text"
+                android:fontFamily="@font/inter_bold"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textColorHint="@color/Light_20"
+                android:textSize="@dimen/_20ssp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/textFieldEmail2"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:background="@drawable/custom_edit_text"
+                android:fontFamily="@font/inter_bold"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textColorHint="@color/Light_20"
+                android:textSize="@dimen/_20ssp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/textFieldEmail3"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/custom_edit_text"
+                android:fontFamily="@font/inter_bold"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textColorHint="@color/Light_20"
+                android:textSize="@dimen/_20ssp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_weight="1"
+            android:gravity="start">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/textFieldEmail4"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:background="@drawable/custom_edit_text"
+                android:fontFamily="@font/inter_bold"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textColorHint="@color/Light_20"
+                android:textSize="@dimen/_20ssp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/textFieldEmail5"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:background="@drawable/custom_edit_text"
+                android:fontFamily="@font/inter_bold"
+                android:gravity="center"
+                android:maxLength="1"
+
+                android:textColorHint="@color/Light_20"
+                android:textSize="@dimen/_20ssp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/textFieldEmail6"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/custom_edit_text"
+                android:fontFamily="@font/inter_bold"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textColorHint="@color/Light_20"
+                android:textSize="@dimen/_20ssp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/splash_text_style"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginBottom="276dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="@string/_04_59"
+        android:textColor="@color/Violet_100"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCheckEmail"
+        style="@style/splash_text_style"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="184dp"
+        android:fontFamily="@font/inter_medium"
+        android:gravity="start"
+        android:text="@string/we_send_verification_code_to_your_email_brajaoma_gmail_com_you_can_check_your_inbox"
+        android:textColor="@color/Dark25"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_backToLogin"
+        style="@style/button_style"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:fontFamily="@font/inter_semibold"
+        android:includeFontPadding="false"
+        android:text="@string/verify"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCheckEmail" />
+</androidx.constraintlayout.widget.ConstraintLayout>
