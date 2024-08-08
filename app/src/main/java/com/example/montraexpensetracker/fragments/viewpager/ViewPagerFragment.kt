@@ -33,6 +33,10 @@ class ViewPagerFragment : Fragment() {
 
         }
 
+        binding.buttonLogin.setOnClickListener {
+            findNavController().navigate(R.id.action_viewPagerFragment_to_loginFragment)
+
+        }
 
     }
 }

@@ -17,6 +17,7 @@
         android:layout_marginTop="@dimen/_125sdp"
         android:layout_marginEnd="@dimen/_16sdp"
         android:hint="@string/textfield_name"
+        android:fontFamily="@font/inter"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,6 +28,7 @@
         style="@style/text_edit"
         android:layout_marginTop="@dimen/_15sdp"
         android:layout_marginEnd="@dimen/_16sdp"
+        android:fontFamily="@font/inter"
         android:hint="@string/hint_text_email"
         android:textColorHint="@color/Light_20"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,6 +51,7 @@
             style="@style/text_edit"
             android:layout_marginEnd="@dimen/_16sdp"
             app:hintTextColor="@color/Light_20"
+            android:fontFamily="@font/inter"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textFieldEmail" />
@@ -89,8 +92,6 @@
 
     <TextView
         style="@style/splash_text_style"
-
-
         android:layout_marginTop="17dp"
         android:fontFamily="@font/inter_bold"
         android:text="@string/or_with"
@@ -118,32 +119,30 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
-
     <TextView
         style="@style/splash_text_style"
-
-        android:layout_marginEnd="@dimen/_8sdp"
-        android:layout_marginBottom="@dimen/_44sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="28dp"
         android:fontFamily="@font/inter_medium"
-        android:layout_marginStart="@dimen/_10sdp"
         android:text="@string/already_have_an_account"
         android:textColor="@color/Light_20"
         android:textSize="@dimen/_11ssp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintHorizontal_bias="0.248"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         style="@style/splash_text_style"
-        android:layout_marginStart="@dimen/_10sdp"
-        android:layout_marginBottom="@dimen/_44sdp"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_22sdp"
         android:fontFamily="@font/inter_medium"
         android:text="@string/login_text"
         android:textColor="@color/Violet_100"
         android:textSize="@dimen/_11ssp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintHorizontal_bias="0.735"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
