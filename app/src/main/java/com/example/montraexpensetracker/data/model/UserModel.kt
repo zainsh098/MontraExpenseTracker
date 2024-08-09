@@ -7,3 +7,10 @@ data class UserModel(
   val email: String,
   val password: String, )
 
+
+
+data class UserLoginModel(
+  val email: String,
+  val password: String,
+)
+

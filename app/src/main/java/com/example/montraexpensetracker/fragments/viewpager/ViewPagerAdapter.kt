@@ -8,13 +8,10 @@ import com.example.montraexpensetracker.fragments.dashboard.Dashboard3Fragment
 
 class ViewPagerAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
     override fun getItemCount(): Int {
-
         return 3
     }
 
     override fun createFragment(position: Int): Fragment {
-
-
         return when (position) {
 
             0 -> Dashboard1Fragment()
@@ -22,9 +19,6 @@ class ViewPagerAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
             2 -> Dashboard3Fragment()
             else -> throw IllegalStateException("Unexpected position $position")
 
-
         }
-
-
     }
 }
