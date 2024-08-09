@@ -56,6 +56,9 @@
         <action
             android:id="@+id/action_signUpFragment_to_signupVerificationFragment"
             app:destination="@id/signupVerificationFragment" />
+        <argument
+            android:name="email"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
