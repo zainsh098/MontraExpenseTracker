@@ -11,7 +11,6 @@ import com.example.montraexpensetracker.databinding.FragmentForgotPasswordSentBi
 
 class ForgotPasswordSentFragment : Fragment() {
 
-
     private lateinit var binding: FragmentForgotPasswordSentBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -30,13 +29,7 @@ class ForgotPasswordSentFragment : Fragment() {
             binding.buttonBackToLogin.setOnClickListener {
 
                 findNavController().navigate(R.id.action_forgotPasswordSentFragment_to_loginFragment)
-
-
             }
-
-
         }
-
     }
-
 }
