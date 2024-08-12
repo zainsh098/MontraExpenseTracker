@@ -72,6 +72,7 @@
         android:buttonTint="@color/Violet_100"
         android:fontFamily="@font/inter_medium"
         android:includeFontPadding="false"
+        android:checked="false"
         android:paddingStart="@dimen/_5sdp"
         android:text="@string/checkbox_text"
         android:textSize="@dimen/_11ssp"
@@ -140,6 +141,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
+        android:id="@+id/textViewLogin1"
         style="@style/splash_text_style"
         android:layout_marginStart="@dimen/_40sdp"
         android:layout_marginBottom="@dimen/_22sdp"

@@ -1,11 +1,11 @@
 package com.example.montraexpensetracker.data.remote
 
+import android.util.Log
 import com.example.montraexpensetracker.domain.AuthRepository
+import com.example.montraexpensetracker.domain.ForgotPasswordModel
 import com.example.montraexpensetracker.domain.UserLoginModel
 import com.example.montraexpensetracker.domain.UserModel
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.GoogleAuthProvider
 import kotlinx.coroutines.tasks.await
 
 class FirebaseAuthDataSource : AuthRepository {
@@ -26,6 +26,16 @@ class FirebaseAuthDataSource : AuthRepository {
         val firebaseUser = result.user
         return firebaseUser?.let {
             UserLoginModel(email, password)
+        }
+    }
+
+    override suspend fun userForgotPassword(email: String): ForgotPasswordModel? {
+        return try {
+            auth.sendPasswordResetEmail(email).await()
+            ForgotPasswordModel(email)
+        } catch (e: Exception) {
+            Log.e("ForgotPassword", "Failed to send password reset email", e)
+            null
         }
     }
 
